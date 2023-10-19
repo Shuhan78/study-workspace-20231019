@@ -110,7 +110,7 @@ func main() {
 	fmt.Println("cap:", cap(a))
 
 	fmt.Println("----------")
-	a = append([]int{10}, a...)
+	aw = append([]int{10}, aw...)
 	for i, v := range a {
 		fmt.Println(i, v)
 	}
