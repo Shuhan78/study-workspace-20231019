@@ -102,26 +102,26 @@ func main() {
 	fmt.Println("--------------------------")
 
 	//只保留陣列aw前3個元素(為刪除)
-	aw = append(a[:0], a[:3]...)
+	aw = append(aw[:0], aw[:3]...)
 	for i, v := range aw {
 		fmt.Println(i, v)
 	}
-	fmt.Println("cap:", cap(a))
+	fmt.Println("aw: ", aw, "cap:", cap(a))
 	fmt.Println("--------------------------")
 
 	//取完aw[:1]的值再加上a[:3]
-	aw = append(a[:1], a[:3]...)
+	aw = append(aw[:1], aw[:3]...)
 	for i, v := range aw {
 		fmt.Println(i, v)
 	}
-	fmt.Println("cap:", cap(a))
+	fmt.Println("aw: ", aw, "cap:", cap(a))
 	fmt.Println("--------------------------")
 
-	aw = append([]int{10}, aw...)
-	for i, v := range a {
+	aw = append([]int{-10}, aw...)
+	for i, v := range aw {
 		fmt.Println(i, v)
 	}
-	fmt.Println("cap:", cap(a))
+	fmt.Println("aw: ", aw, "cap:", cap(a))
 	fmt.Println("--------------------------")
 
 	//copy
