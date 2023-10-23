@@ -160,8 +160,5 @@ func main() {
 	//test conflict
 	sli := []int{2, 4, -4}
 	fmt.Println(sli)
-<<<<<<< HEAD
-=======
 
->>>>>>> develop
 }
