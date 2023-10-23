@@ -157,4 +157,7 @@ func main() {
 		fmt.Println("clean it by myself")
 	}
 
+	//test conflict
+	sli := []int{2, 4, -4}
+	fmt.Println(sli)
 }
