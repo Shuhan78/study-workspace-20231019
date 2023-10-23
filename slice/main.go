@@ -161,4 +161,7 @@ func main() {
 	sli := []int{2, 4, -4}
 	fmt.Println(sli)
 
+	//test remote conflict
+	slice := []string{"local", "remote"}
+	fmt.Println(slice)
 }
